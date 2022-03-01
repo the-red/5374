@@ -697,4 +697,8 @@ $(function() {
     }
   }
   updateAreaList();
+  const areaFromUrl = decodeURI(location.hash.replace(/^#/, ''))
+  if (areaFromUrl) {
+    setSelectedAreaName(areaFromUrl)
+  }
 });
